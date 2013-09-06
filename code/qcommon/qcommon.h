@@ -20,11 +20,12 @@ This file is part of Jedi Academy.
 #ifndef __QCOMMON_H__
 #define __QCOMMON_H__
 
-#include "stringed_ingame.h"
+//#include "stringed_ingame.h"
 #include "../qcommon/q_shared.h"
 #include "../../codeJK2/qcommon/strippublic.h"
 #include "../qcommon/cm_public.h"
 
+#define RIFTQUAKE2_VERSION 1.1
 
 // some zone mem debugging stuff
 #ifndef FINAL_BUILD
@@ -381,6 +382,12 @@ void 	Cvar_Set( const char *var_name, const char *value );
 
 cvar_t	*Cvar_Set2(const char *var_name, const char *value, qboolean force);
 // same as Cvar_Set, but allows more control over setting of cvar
+
+void Cvar_SetInteger (char *var_name, int integer);
+// expands value to a string and calls Cvar_Set
+
+cvar_t *Cvar_ForceSet (char *var_name, char *value);
+// will set the variable even if NOSET or LATCH
 
 void	Cvar_SetValue( const char *var_name, float value );
 // expands value to a string and calls Cvar_Set

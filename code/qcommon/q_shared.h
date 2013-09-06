@@ -1307,6 +1307,8 @@ default values.
 #define	CVAR_USERINFO		2	// sent to server on connect or change
 #define	CVAR_SERVERINFO		4	// sent in response to front end requests
 #define	CVAR_SYSTEMINFO		8	// these cvars will be duplicated on all clients
+#define	CVAR_NOSET			16	// don't allow change from console at all,
+
 #define	CVAR_INIT			16	// don't allow change from console at all,
 								// but can be set from the command line
 #define	CVAR_LATCH			32	// will only change when C code next does

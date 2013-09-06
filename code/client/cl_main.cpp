@@ -28,7 +28,12 @@ This file is part of Jedi Academy.
 #include <limits.h>
 #include "../ghoul2/G2.h"
 
+
 #include "../RMG/RM_Headers.h"
+
+#include "../qcommon/stringed_ingame.h"
+
+#include "../vr/vr.h"
 
 #ifndef _WIN32
 #include "../sys/sys_loadlib.h"

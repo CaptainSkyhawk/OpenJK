@@ -35,6 +35,16 @@ static float vr_emaWeight = 0.25;
 
 vr_ovr_settings_t vr_ovr_settings = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, { 0, 0, 0, 0,}, { 0, 0, 0, 0,}, "", ""};
 
+enum {
+	VR_AIMMODE_DISABLE,
+	VR_AIMMODE_HEAD_MYAW,
+	VR_AIMMODE_HEAD_MYAW_MPITCH,
+	VR_AIMMODE_MOUSE_MYAW,
+	VR_AIMMODE_MOUSE_MYAW_MPITCH,
+	VR_AIMMODE_BLENDED_FIXPITCH,
+	VR_AIMMODE_BLENDED,
+	NUM_VR_AIMMODE
+} vr_aimmode_t;
 
 void VR_OVR_SetFOV()
 {

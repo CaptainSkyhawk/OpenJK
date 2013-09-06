@@ -1921,6 +1921,6 @@ void R_VR_BindLeft();
 void R_VR_BindRight();
 void R_VR_Present();
 void R_VR_EndFrame();
-void R_VR_DrawHud()
+void R_VR_DrawHud();
 
 #endif //TR_LOCAL_H

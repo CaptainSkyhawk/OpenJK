@@ -22,6 +22,7 @@ This file is part of Jedi Academy.
 #include "qcommon.h"
 #include "sstring.h"	// to get Gil's string class, because MS's doesn't compile properly in here
 #include "stv_version.h"
+#include "stringed_ingame.h"
 
 // Because renderer.
 #include "../renderer/tr_public.h"

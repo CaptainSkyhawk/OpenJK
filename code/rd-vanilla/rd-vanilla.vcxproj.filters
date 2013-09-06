@@ -466,8 +466,5 @@
     <None Include="ref_trin.def">
       <Filter>Source Files</Filter>
     </None>
-    <None Include="..\..\lib\jpeg-8c\README">
-      <Filter>Libraries\jpeg-8c</Filter>
-    </None>
   </ItemGroup>
 </Project>

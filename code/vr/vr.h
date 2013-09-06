@@ -62,16 +62,7 @@ extern cvar_t *vr_viewmove;
 extern cvar_t *vr_hud_bounce;
 extern cvar_t *vr_hud_bounce_falloff;
 
-enum {
-	VR_AIMMODE_DISABLE,
-	VR_AIMMODE_HEAD_MYAW,
-	VR_AIMMODE_HEAD_MYAW_MPITCH,
-	VR_AIMMODE_MOUSE_MYAW,
-	VR_AIMMODE_MOUSE_MYAW_MPITCH,
-	VR_AIMMODE_BLENDED_FIXPITCH,
-	VR_AIMMODE_BLENDED,
-	NUM_VR_AIMMODE
-} vr_aimmode_t;
+
 
 
 

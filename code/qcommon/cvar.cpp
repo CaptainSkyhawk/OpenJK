@@ -1335,3 +1335,22 @@ void Cvar_Defrag(void)
 	memPoolSize = nextMemPoolSize;
 }
 
+
+/*
+=================
+Cvar_SetInteger
+=================
+*/
+void Cvar_SetInteger (char *var_name, int integer)
+{
+	char	val[32];
+
+	Com_sprintf (val, sizeof(val), "%i",integer);
+	Cvar_Set (var_name, val);
+}
+
+
+cvar_t *Cvar_ForceSet (char *var_name, char *value)
+{
+	return Cvar_Set2 (var_name, value, true);
+}
